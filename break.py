@@ -13,3 +13,21 @@ while my_x > 0:
     if my_x == 5:
         break
     my_x -= 1
+
+
+#####
+
+while True:
+    my_x = int(input())
+    if my_x == 5:
+        break
+
+
+###### nem szeretem a 3-at:
+
+for i in range(5):
+    if 3 == i:
+        continue
+    print(i)
+
+#####
