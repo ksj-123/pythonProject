@@ -4,7 +4,7 @@ driver = webdriver.Chrome()
 try:
     driver.get("https://localhost:9999/trickybuttons.html")
 
-    buttons = driver.find_element_by_xpath('//button')
+    buttons = driver.find_elements_by_xpath('//button')
     print(buttons)
     print(type(buttons))
 
