@@ -5,5 +5,6 @@ for i in l:
         break
     print(i)
 
+
 for i in l[:3]:
     print(i)
