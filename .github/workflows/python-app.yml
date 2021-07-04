@@ -31,6 +31,24 @@ jobs:
         flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
         # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+    - name: install Nodejs
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+    - name: Install Selenium Side Runner
+      run: |
+        npm install -g selenium-side-runner
+    - name: Install Chrome
+      run: |
+        sudo apt install google-chrome-stable
+    - name: Install seleniumbase
+      run: pip install seleniumbase
+    - name: Install chromedriver
+      run: |
+          seleniumbase install chromedriver
+    - name: Run Tests
+      run: |
+          selenium-side-runner -c "browserName=chrome goog:chromeOptions.args=[disable-infobars, headless]" test.side  
     - name: Test with pytest
       run: |
         pytest
