@@ -1,9 +1,12 @@
 from selenium import webdriver
-from webdriver_manager.chrome import ChromeDriverManager
-from selenium.common.exceptions import NoSuchElementException
+# from webdriver_manager.chrome import ChromeDriverManager
+# from selenium.common.exceptions import NoSuchElementException
 
 # In order for ChromeDriverManager to work you must pip install it in your own environment.
-driver = webdriver.Chrome(ChromeDriverManager().install())
+# driver = webdriver.Chrome(ChromeDriverManager().install())
+driver = webdriver.Chrome()
 
-try:
-    driver.get("https://google.com")
+driver.get("https://google.com")
+
+
+
