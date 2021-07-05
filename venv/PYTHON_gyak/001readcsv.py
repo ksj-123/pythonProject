@@ -5,3 +5,4 @@ with open('data1.csv') as csvfile:
     next(csvreader)
     for row in csvreader:
         print(row)
+
