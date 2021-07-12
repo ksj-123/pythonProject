@@ -1,1 +1,2 @@
-print(max('szilva', 'eper', 'barack', 'banán'))
+s = "selenium"
+print(s[1:3])
