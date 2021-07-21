@@ -12,13 +12,13 @@ try:
     time.sleep(1)
 
     main_window = driver.window_handles[0]
-    other_window = driver.switch_to_window('myWin')        # átállítjuk a másik ablakra
+    other_window = driver.switch_to.window('myWin')        # átállítjuk a másik ablakra
 
     assert(driver.title == "met.hu - Országos Meteorológiai Szolgálat")      # a vizsgált ablak címe megegyezik e
     print(driver.title)
     time.sleep(5)
     driver.close()
-    driver.switch_to_window(main_window)
+    driver.switch_to.window(main_window)
     driver.close()
 finally:
     pass

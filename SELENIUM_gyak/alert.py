@@ -3,6 +3,9 @@
 import time
 
 from selenium import webdriver
+import time
+
+from selenium import webdriver
 
 driver = webdriver.Chrome()
 

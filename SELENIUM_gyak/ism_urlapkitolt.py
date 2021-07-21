@@ -5,7 +5,7 @@ import time
 driver = webdriver.Chrome()
 driver.get("http://localhost:9999/filltablewithsum.html")
 
-#-------
+#####
 
 with open('data1.csv') as csvfile:
     csvreader = csv.reader(csvfile, delimiter=',')
