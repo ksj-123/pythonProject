@@ -15,7 +15,7 @@ drive)
 .executeScript("return window.getComputedStyle(arguments[0]).getPropertyValue('background-color');", el);
 System.out.println(contents);
 
-# ha meg lett volna a stíulban a színeknek a hivatkozása, akkor assert-tel, a gomb megnyomása után a változást lehetne ellenőrizni
+# ha meg lett volna a stílusban a színeknek a hivatkozása, akkor assert-tel, a gomb megnyomása után a változást lehetne ellenőrizni
 
 color_button = driver.find_element_by_xpath('//*[@id="banner-message"]/button')
 color_button.click()
