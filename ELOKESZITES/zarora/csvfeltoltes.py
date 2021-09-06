@@ -8,7 +8,7 @@ from datetime import datetime
 
 options = Options()
 prefs = {
-    "download.default_directory": "C:\\Users\\tjozsa\\PycharmProjects\\homeworks\selenium2-homework"}
+    "download.default_directory": "C:\\Users\\User\\PycharmProjects\\elokeszites\\zarora"}
 
 options.headless = False
 options.add_experimental_option("prefs", prefs)
